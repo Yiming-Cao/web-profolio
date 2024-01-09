@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Permanent+Marker&family=Roboto&family=Rubik&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="script" href="main.js">
+</head>
+<body>
+    <header>
+        <div class="logo2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="90" viewBox="0 0 51 90" fill="none">
+                <path d="M25.5 90L21.7716 46.0976H29.2284L25.5 90Z" fill="#B92D2D"/>
+                <path d="M25.5 52.6829L3.41635 13.1707L47.5836 13.1707L25.5 52.6829Z" fill="#B92D2D"/>
+                <path d="M25.5 41.7073L12.0204 18.1097L38.9796 18.1097L25.5 41.7073Z" fill="white"/>
+                <path d="M25.5 10.9756L38.9796 18.1097L25.5 20L12 18.1097L25.5 10.9756Z" fill="white"/>
+                </svg>
+        </div>
+        <div class="menu">
+            <button id="closeButton">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="49" viewBox="0 0 50 49" fill="none">
+                <line x1="0.646447" y1="47.7739" x2="47.7739" y2="0.646448" stroke="black"/>
+                <line x1="1.53202" y1="0.824929" x2="48.6607" y2="47.9536" stroke="black"/>
+            </svg>
+            </button>
+            <script>
+                // 获取关闭按钮元素
+                const closeButton = document.getElementById('closeButton');
+            
+                // 监听关闭按钮的点击事件
+                closeButton.addEventListener('click', function() {
+                  // 返回上一页
+                  window.history.back();
+                });
+            </script>
+        </div>
+        
+    </header>
+    <div class="menuMid">
+        <div class="menu-text-vlak">
+            <a href="index.html">
+                <div class="menu-text">
+                    Home
+                </div>
+            </a>
+            <a href="indexstudie.html">
+                <div class="menu-text">
+                    Studie
+                </div>
+            </a>
+            <a href="">
+                <div class="menu-text">
+                    Hobby
+                </div>
+            </a>
+            <a href="">
+                <div class="menu-text">
+                    Gamer
+                </div>
+            </a>
+            <a href="">
+                <div class="menu-text">
+                    Contact
+                </div>
+            </a>
+        </div>
+        <div class="menu-img-vlak">
+            <div class="menu-img">
+                <img src="image/rocgebow.jpg" alt="" class="menu-img">
+            </div>
+            <div class="menu-img">
+                <img src="image/rocgebow.jpg" alt="" class="menu-img">
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>

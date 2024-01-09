@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studie</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Permanent+Marker&family=Roboto&family=Rubik&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="script" href="main.js">
+</head>
+<body>
+    <header>
+        <div class="logo2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="90" viewBox="0 0 51 90" fill="none">
+                <path d="M25.5 90L21.7716 46.0976H29.2284L25.5 90Z" fill="#B92D2D"/>
+                <path d="M25.5 52.6829L3.41635 13.1707L47.5836 13.1707L25.5 52.6829Z" fill="#B92D2D"/>
+                <path d="M25.5 41.7073L12.0204 18.1097L38.9796 18.1097L25.5 41.7073Z" fill="white"/>
+                <path d="M25.5 10.9756L38.9796 18.1097L25.5 20L12 18.1097L25.5 10.9756Z" fill="white"/>
+                </svg>
+        </div>
+        <div class="menu">
+            <a href="indexmenu.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="32" viewBox="0 0 70 32" fill="none" >
+                <line x1="5" y1="0.5" x2="64" y2="0.5" stroke="black"/>
+                <line y1="16.5" x2="70" y2="16.5" stroke="black"/>
+                <line x1="5" y1="31.5" x2="64" y2="31.5" stroke="black"/>
+            </svg>
+            </a>
+        </div>
+        
+    </header>
+    <div class="studiemid">
+        <img id="expanding-ball" src="image/redball.webp" alt="Red Ball">
+
+    <script>
+        const expandingBall = document.getElementById('expanding-ball');
+
+        expandingBall.addEventListener('click', function() {
+            this.style.transform = 'scale(20)';
+            this.style.opacity = '0';
+
+            setTimeout(() => {
+                this.style.display = 'none';
+            }, 500);
+        });
+    </script>
+    </div>
+</body>
+</html>
